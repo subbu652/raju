@@ -1,12 +1,14 @@
 from django.shortcuts import render,redirect
 from todo.models import Task
-from datetime import datetime
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+def home(request):
+    return render(request,'homepage.html')
+
 @login_required(login_url='signin')
 def display(request):
     if request.method == "POST":
@@ -74,7 +76,7 @@ def signin(request):
 
 def signout(request):
     logout(request)
-    return redirect('signin')
+    return redirect('home')
 
 def completed(request, inpt):
     return render(request,'todo_display.html',{'tasks':Task.objects.filter(status=inpt)})

@@ -76,13 +76,13 @@ li a{
     padding: 10px; 
     width: 90px;
     align-self: flex-end;
+    text-decoration: none;
 }
 
 a{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right:20px;
-
 }
 
 form {
@@ -165,7 +165,7 @@ th {
 }
 
 #edit-button:hover, #remove-button:hover {
-    background-color: #960606;
+    background-color: #e10404;
 }
 
 #finish-button:hover{
