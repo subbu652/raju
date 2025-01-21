@@ -1,0 +1,37 @@
+.container1{
+    width:700px;
+    height:300px;
+    border:1px solid lightslategray;
+    padding:30px;
+    border-radius:40px 40px 0px 0px;
+}
+.container1 span{
+    font-size:40px;
+    color:grey;
+}
+.container2{
+    width:700px;
+    height:100px;
+    border:1px solid lightslategray;
+    border-top:0px;
+    padding:30px;
+    background-color:azure;
+    font-size:30px;
+    border-radius:0px 0px 40px 40px;
+}
+.image{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    margin-top:-250px;
+    margin-left:480px;
+    border:2px solid grey; 
+}
+.image img{
+    width:180px;
+    height:180px;
+    padding:10px;
+    border-radius:50%;
+    background:white;
+    
+}
